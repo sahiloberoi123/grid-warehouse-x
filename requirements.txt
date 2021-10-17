@@ -5,6 +5,6 @@ gunicorn
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe
-networkx==2.1
+networkx
 numpy
 typing==3.6.4
