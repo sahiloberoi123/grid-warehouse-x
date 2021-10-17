@@ -1,11 +1,15 @@
 # Warehouse-Navigation
 Web app demonstrating order picking algorithms
 
-## Installation
+## Live Link :-  ##
+https://grid-warehouse.herokuapp.com/
 
-1. `git clone https://github.com/GTSupplyChainAR/Warehouse-Navigation.git`
-2. `cd Warehouse-Navigation`
-3. `virtualenv venv`
-4. `pip install -r requirements.txt`
-5. `python app.py`
-6. Open `localhost:5000`
+## ScreenShot of working project ##
+
+![Screenshot 2021-10-17 at 10 35 06 PM](https://user-images.githubusercontent.com/48948845/137637520-7ccbe3e0-5034-4d4e-8874-2e6c7280cce8.png)
+<br>
+## Novelty :- ##
+
+1. It helps giving directions of picking up orders in a way which is optimized to the user.
+2. Easily accessible and used.
+
