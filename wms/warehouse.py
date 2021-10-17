@@ -296,7 +296,7 @@ class Item(object):
 def get_simple_warehouse():
     dimensions = (4, 4)
 
-    grid = utils.init_grid(dimensions)
+    grid = init_grid(dimensions)
 
     # Fill out first column, bottom to top
     grid[0][0] = NavigableTileCell()
@@ -330,7 +330,7 @@ def get_simple_warehouse():
 def get_larger_warehouse():
     dimensions = (8, 4)
 
-    grid = utils.init_grid(dimensions)
+    grid = init_grid(dimensions)
 
     for row_num in range(4):
         grid[0][row_num] = NavigableTileCell()
@@ -354,7 +354,7 @@ def get_georgia_tech_library_warehouse():
     larger_warehouse_grid = larger_warehouse.grid
 
     dimensions = (8, 16)
-    grid = utils.init_grid(dimensions)
+    grid = init_grid(dimensions)
 
     for col_num in range(8):
         for row_num in range(16):
