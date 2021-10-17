@@ -1,0 +1,11 @@
+click==6.7
+decorator==4.2.1
+Flask
+gunicorn
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+networkx==2.1
+numpy
+typing==3.6.4
+Werkzeug==0.14.1

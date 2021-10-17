@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Grid Warehouses</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Grid Warehouse <small>Do you know da wae?</small></h1>
+            <hr/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Configuration</h1>
+
+            <form method="GET">
+                <div class="form-group">
+                    <label for="warehouseId">Warehouse ID</label>
+                    <select name="warehouseId"
+                            id="warehouseId"
+                            class="custom-select">
+                        <option value="simple">Simple (4 x 4)</option>
+                        <option value="larger">Larger (8 x 4)</option>
+                        <option value="georgia-tech">Georgia Tech Library (16 x 8)</option>
+                    </select>
+                </div>
+
+                <hr/>
+
+                <div class="form-group">
+                    <label for="sourceX">Source X</label>
+                    <input type="number"
+                           class="form-control"
+                           id="sourceX"
+                           name="sourceX"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="sourceY">Source Y</label>
+                    <input type="number"
+                           class="form-control"
+                           id="sourceY"
+                           name="sourceY"/>
+                </div>
+
+                <hr/>
+
+                <div class="form-group">
+                    <label for="itemsToPickUp">Items to Pick Up (e.g. "[[1, 0], [7, 14]]")</label>
+                    <input type="text"
+                           class="form-control"
+                           id="itemsToPickUp"
+                           name="itemsToPickUp"/>
+                </div>
+
+                <hr/>
+
+                <button class="btn btn-block btn-outline-primary"
+                        type="submit">Render
+                </button>
+
+            </form>
+
+        </div>
+        <div class="col-md-6">
+            <h1>Rendering</h1>
+
+            <br/>
+
+            <!-- Markup for the head of the arrow -->
+            <svg>
+                <defs>
+                    <marker
+                            id="arrow"
+                            markerUnits="strokeWidth"
+                            markerWidth="12"
+                            markerHeight="12"
+                            viewBox="0 0 12 12"
+                            refX="6"
+                            refY="6"
+                            orient="auto">
+                        <path d="M2,2 L10,6 L2,10 L6,6 L2,2" style="fill: #f00;"></path>
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="/static/grid.js" type="text/javascript"></script>
+
+</body>
+</html>
