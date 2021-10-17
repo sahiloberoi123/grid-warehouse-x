@@ -132,7 +132,7 @@ def _hamilton_circuit_helper(G, source, ham_path):  # type: (nx.Graph, []) -> bo
 
     return False
 
-from utils import manhattan_distance
+#from utils import manhattan_distance
 
 
 PositionType = typing.Tuple[int, int]
